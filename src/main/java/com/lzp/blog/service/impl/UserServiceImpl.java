@@ -24,4 +24,14 @@ public class UserServiceImpl implements UserService {
         String username = "张海洋";
         return userMapper.selectByUsername(username);
     }
+
+    /**
+     * @Description : 通过用户id获取用户角色
+     * @Return : com.lzp.blog.entity.User
+     */
+    @Override
+    public User getRolesOfUser(int userId) {
+        LOGGER.info("通过用户id获取用户角色开始");
+        return userMapper.selectRoleByUserId(userId);
+    }
 }

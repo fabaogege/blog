@@ -24,4 +24,5 @@ public interface UserMapper {
 
     String getPassoword(String username);
 
+    User selectRoleByUserId(int id);
 }

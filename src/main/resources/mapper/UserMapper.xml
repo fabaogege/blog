@@ -18,6 +18,24 @@
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.lzp.blog.entity.User">
     <result column="avatarImgUrl" jdbcType="LONGVARCHAR" property="avatarimgurl" />
   </resultMap>
+  <!--用户与角色映射结果集-->
+  <resultMap id="UserWithRole" type="com.lzp.blog.entity.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="gender" jdbcType="CHAR" property="gender" />
+    <result column="trueName" jdbcType="VARCHAR" property="truename" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="personalBrief" jdbcType="VARCHAR" property="personalbrief" />
+    <result column="recentlyLanded" jdbcType="VARCHAR" property="recentlylanded" />
+    <!-- 关联role表-->
+    <collection property="roles" ofType="com.lzp.blog.entity.Role">
+      <id column="id" jdbcType="INTEGER" property="id" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+    </collection>
+  </resultMap>
   <sql id="Base_Column_List">
     id, phone, username, password, gender, trueName, birthday, email, personalBrief, 
     recentlyLanded
@@ -25,11 +43,15 @@
   <sql id="Blob_Column_List">
     avatarImgUrl
   </sql>
-  <!--<select id = "selectRolesByUserId" resultType="com.lzp.blog.entity.Role">
-    select *
-    from blog_role br
-    where br.user
-  </select>-->
+  <!--通过用户id查询用户的权限-->
+  <select id="selectRoleByUserId" resultMap="UserWithRole" parameterType="java.lang.Integer">
+    SELECT bu.id,bu.username,br.`name`
+    FROM blog_user bu,blog_role br,blog_user_role_rel b
+    where bu.id = b.user_id
+    AND br.id = b.role_id
+    AND bu.id = #{id}
+
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />

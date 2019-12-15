@@ -5,19 +5,19 @@ import java.util.List;
 
 public class User implements Serializable {
 
-    private Integer id;
+    private Integer id;//用户id
 
-    private String phone;
+    private String phone;//用户电话
 
-    private String username;
+    private String username;//用户账号
 
-    private String password;
+    private String password;//用户密码
 
-    private String gender;
+    private String gender;//性别
 
-    private String truename;
+    private String truename;//真实姓名
 
-    private String birthday;
+    private String birthday;//生日
 
     private String email;
 

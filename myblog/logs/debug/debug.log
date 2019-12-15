@@ -210,3 +210,278 @@
 2019-12-09 21:37:41,458 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 0.805 seconds (JVM running for 271.923)
 2019-12-09 21:37:41,460 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] - Condition evaluation unchanged
 2019-12-09 21:39:47,874 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-10 10:41:38,216 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 17260 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-10 10:41:38,225 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-10 10:41:38,263 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-10 10:41:38,263 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-10 10:41:39,143 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 10:41:39,436 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-10 10:41:39,445 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-10 10:41:39,446 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-10 10:41:39,446 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-10 10:41:39,515 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-10 10:41:39,515 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1251 ms
+2019-12-10 10:41:40,162 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-10 10:41:40,185 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-10 10:41:40,250 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-10 10:41:40,314 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-10 10:41:40,327 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-10 10:41:40,334 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-10 10:41:40,499 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-10 10:41:40,516 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-10 10:41:40,519 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 2.636 seconds (JVM running for 4.989)
+2019-12-10 10:41:54,691 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-10 10:41:54,691 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-10 10:41:54,696 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+2019-12-10 10:42:00,368 [http-nio-8080-exec-4] INFO  [com.lzp.blog.service.impl.UserServiceImpl] - 获取User开始
+2019-12-10 10:42:00,427 [http-nio-8080-exec-4] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-12-10 17:51:55,781 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-10 17:51:55,789 [SpringContextShutdownHook] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-12-15 14:38:11,583 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 11248 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-15 14:38:11,596 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-15 14:38:11,643 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 14:38:11,644 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 14:38:12,696 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 14:38:13,047 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-15 14:38:13,056 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:38:13,057 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-15 14:38:13,058 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 14:38:13,123 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-15 14:38:13,124 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1480 ms
+2019-12-15 14:38:13,949 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:38:13,976 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-15 14:38:14,063 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-15 14:38:14,146 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-15 14:38:14,170 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-15 14:38:14,188 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-15 14:38:14,464 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:38:14,485 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 14:38:14,488 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 3.338 seconds (JVM running for 7.133)
+2019-12-15 14:38:31,299 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 14:38:31,299 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-15 14:38:31,309 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 9 ms
+2019-12-15 14:38:54,860 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:38:59,810 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 12388 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-15 14:38:59,823 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-15 14:38:59,884 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 14:38:59,885 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 14:39:00,944 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 14:39:01,227 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-15 14:39:01,236 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:39:01,236 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-15 14:39:01,237 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 14:39:01,307 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-15 14:39:01,307 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1422 ms
+2019-12-15 14:39:02,113 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:39:02,137 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-15 14:39:02,209 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-15 14:39:02,282 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-15 14:39:02,298 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-15 14:39:02,307 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-15 14:39:02,478 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:39:02,501 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 14:39:02,504 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 3.125 seconds (JVM running for 4.942)
+2019-12-15 14:39:04,653 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 14:39:04,653 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-15 14:39:04,658 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+2019-12-15 14:39:22,695 [http-nio-8080-exec-5] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'userId' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'userId' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:245) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_172]
+2019-12-15 14:39:47,224 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:39:51,841 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 4848 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-15 14:39:51,851 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-15 14:39:51,902 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 14:39:51,902 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 14:39:52,856 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 14:39:53,103 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-15 14:39:53,111 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:39:53,112 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-15 14:39:53,112 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 14:39:53,176 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-15 14:39:53,176 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1274 ms
+2019-12-15 14:39:53,833 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:39:53,856 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-15 14:39:53,923 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-15 14:39:53,989 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-15 14:39:54,005 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-15 14:39:54,012 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-15 14:39:54,173 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:39:54,193 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 14:39:54,196 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 2.74 seconds (JVM running for 4.455)
+2019-12-15 14:39:57,445 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 14:39:57,445 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-15 14:39:57,454 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 9 ms
+2019-12-15 14:40:09,423 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:40:14,603 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 17648 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-15 14:40:14,615 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-15 14:40:14,699 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 14:40:14,701 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 14:40:15,820 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 14:40:16,131 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-15 14:40:16,141 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:40:16,142 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-15 14:40:16,142 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 14:40:16,208 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-15 14:40:16,208 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1506 ms
+2019-12-15 14:40:16,929 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:40:16,955 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-15 14:40:17,021 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-15 14:40:17,083 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-15 14:40:17,099 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-15 14:40:17,110 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-15 14:40:17,278 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:40:17,299 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 14:40:17,302 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 3.229 seconds (JVM running for 5.238)
+2019-12-15 14:40:19,460 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 14:40:19,460 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-15 14:40:19,465 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+2019-12-15 14:40:23,113 [http-nio-8080-exec-4] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'userId' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'userId' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:245) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_172]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_172]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_172]
+2019-12-15 14:59:31,874 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:59:35,953 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 20460 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-15 14:59:35,963 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-15 14:59:36,014 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 14:59:36,014 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 14:59:36,837 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 14:59:37,065 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-15 14:59:37,073 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:59:37,074 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-15 14:59:37,075 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 14:59:37,133 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-15 14:59:37,133 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1118 ms
+2019-12-15 14:59:37,723 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 14:59:37,743 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-15 14:59:37,803 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-15 14:59:37,861 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-15 14:59:37,873 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-15 14:59:37,879 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-15 14:59:38,020 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-15 14:59:38,040 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 14:59:38,043 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 2.5 seconds (JVM running for 3.958)
+2019-12-15 14:59:44,550 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 14:59:44,550 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-15 14:59:44,555 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 5 ms
+2019-12-15 14:59:48,975 [http-nio-8080-exec-5] WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userId' for method parameter of type int]
+2019-12-15 15:00:40,444 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 15:00:44,431 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Starting BlogApplication on DESKTOP-TMMGO5I with PID 16976 (E:\ideaWorkspace\blog\target\classes started by lzp in E:\ideaWorkspace\blog)
+2019-12-15 15:00:44,441 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - No active profile set, falling back to default profiles: default
+2019-12-15 15:00:44,489 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 15:00:44,490 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 15:00:45,318 [restartedMain] INFO  [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 15:00:45,549 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8080 (http)
+2019-12-15 15:00:45,557 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-15 15:00:45,557 [restartedMain] INFO  [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2019-12-15 15:00:45,558 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-15 15:00:45,614 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2019-12-15 15:00:45,614 [restartedMain] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1124 ms
+2019-12-15 15:00:46,194 [restartedMain] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 15:00:46,214 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] - LiveReload server is running on port 35729
+2019-12-15 15:00:46,274 [restartedMain] WARN  [org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-12-15 15:00:46,331 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Context refreshed
+2019-12-15 15:00:46,343 [restartedMain] INFO  [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] - Found 1 custom documentation plugin(s)
+2019-12-15 15:00:46,350 [restartedMain] INFO  [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] - Scanning for api listing references
+2019-12-15 15:00:46,501 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-15 15:00:46,521 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 15:00:46,524 [restartedMain] INFO  [com.lzp.blog.BlogApplication] - Started BlogApplication in 2.504 seconds (JVM running for 3.87)
+2019-12-15 15:00:53,743 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 15:00:53,743 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+2019-12-15 15:00:53,749 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - Completed initialization in 6 ms
+2019-12-15 15:00:57,576 [http-nio-8080-exec-5] WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'userId' for method parameter of type int]
+2019-12-15 15:01:30,457 [SpringContextShutdownHook] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] - Shutting down ExecutorService 'applicationTaskExecutor'
