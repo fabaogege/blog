@@ -1,7 +1,10 @@
 package com.lzp.blog.entity;
 
 import java.io.Serializable;
-
+/**
+ * @Description : 权限表实体
+ * @Return : 
+ */
 public class Permission implements Serializable {
     private Long id;
 
@@ -43,5 +46,15 @@ public class Permission implements Serializable {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public String toString() {
+        return "Permission{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
 }

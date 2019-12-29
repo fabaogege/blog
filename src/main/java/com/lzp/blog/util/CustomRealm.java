@@ -49,7 +49,7 @@ public class CustomRealm extends AuthorizingRealm {
         SimpleAuthenticationInfo authInfo = new SimpleAuthenticationInfo();
 
         //获取该主体（这里为user）的角色
-        /*String role = userMapper.getRole(username);*/
+        //String role = userMapper.getRole(username);
         return null;
     }
     /**

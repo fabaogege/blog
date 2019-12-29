@@ -2,7 +2,10 @@ package com.lzp.blog.entity;
 
 import java.io.Serializable;
 import java.util.List;
-
+/**
+ * @Description : 用户表实体
+ * @Return : 
+ */
 public class User implements Serializable {
 
     private Integer id;//用户id

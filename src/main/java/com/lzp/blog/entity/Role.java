@@ -2,7 +2,10 @@ package com.lzp.blog.entity;
 
 import java.io.Serializable;
 import java.util.List;
-
+/**
+ * @Description : 角色表实体
+ * @Return : 
+ */
 public class Role implements Serializable {
     private Integer id;
 

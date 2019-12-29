@@ -100,3 +100,4 @@ java.lang.IllegalStateException: Optional int parameter 'userId' is present but 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_172]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.29.jar:9.0.29]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_172]
+2019-12-27 16:13:52,266 [restartedMain] ERROR [com.lzp.blog.CustomWebMvcConfigurerAdapter] - class path resource [application.cfg] cannot be opened because it does not exist
