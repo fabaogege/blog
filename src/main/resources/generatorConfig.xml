@@ -34,13 +34,16 @@
         <javaClientGenerator targetPackage="com.lzp.blog.dao" targetProject="src/main/java" type="XMLMAPPER"></javaClientGenerator>
 
         <!-- table标签可以有多个，至少一个，tableName指定表名，可以使用_和%通配符 -->
-        <table tableName="blog_tag"
+        <table tableName="blog_article"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <!-- 是否只生成POJO对象 -->
             <property name="modelOnly" value="false"/>
+            <!--生成的实体名称和实际的表名一样（结合后面的去除前缀）,避免比如articleId生成的实体为articleid-->
+            <property name="useActualColumnNames" value="true"/>
             <!-- 数据库中表名有时我们都会带个前缀，而实体又不想带前缀，这个配置可以把实体的前缀去掉 -->
             <domainObjectRenamingRule searchString="^Blog" replaceString=""/>
+
 
         </table>
         <!--去掉注释-->

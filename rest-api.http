@@ -1,0 +1,33 @@
+### 获取所有tag标签
+GET {{baseURL}}/tag/getTags
+Content-Type: application/json
+Cache-Control: no-cache
+
+### 通过用户id获取用户的角色权限
+POST {{baseURL}}/user/getRolesOfUser
+Content-Type: application/json
+Cache-Control: no-cache
+
+{"id": 1}
+### 文章操作接口测试开始
+
+### 获取指定id的文章
+GET {{baseURL}}/article/findArticle/1
+Cache-Control: no-cache
+
+### 添加文章
+POST {{baseURL}}/article/addArticle
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "articleId": 3,
+  "author": "李志鹏",
+  "articleTitle": "测试标题"
+}
+### 删除指定文章
+GET {{baseURL}}}/article/removeArticle/3
+Cache-Control: no-cache
+
+{"id":3}
+### 文章操作接口测试结束

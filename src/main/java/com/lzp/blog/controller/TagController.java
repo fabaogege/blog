@@ -6,10 +6,12 @@ import com.lzp.blog.entity.Tag;
 import com.lzp.blog.service.TagService;
 import com.lzp.blog.service.UserService;
 import com.lzp.blog.util.JsonResponse;
+import com.lzp.blog.util.URLConstant;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,7 +43,12 @@ public class TagController {
     @ApiOperation(value = "获取所有标签",notes = "直接查询所有标签数")
     @GetMapping(value = "/getTags")
     public JsonResponse getTags(){
-        List<Tag> resultTags= tagService.getTags();
-        return jsonResponse.Success(resultTags);
+        List<Tag> tag= tagService.getTags();
+        return jsonResponse.Success(tag);
     }
+    /*public String getTags(Model model){
+        List<Tag> tag= tagService.getTags();
+        model.addAttribute("tag",JSON.toJSONString(jsonResponse.Success(tag)));
+        return URLConstant.TO_TAG;
+    }*/
 }
