@@ -1,7 +1,6 @@
-server:
-  port: 8080
-
 spring:
+  profiles:
+    active: dev #开发环境配置
   #热部署
   devtools:
     restart:
