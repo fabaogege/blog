@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>博客系统</title>
+
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">-->
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/css/Semantic-UI-1.12.Semantic-UI-2.4.2/semantic.min.css}"/>-->
+</head>
+    <!--中间文章展示-->
+<div th:fragment="showArticle" class="eleven wide column">
+        <!--文章区域顶部统计区-->
+        <!--<div class="ui top segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <h3 class="ui header">博客</h3>
+                </div>
+                <div class="right aligned column" id="count-article">
+                    共 <h2 class="ui orange header m-inline-block m-text-thin" id="articleLength" ></h2> 篇
+                </div>
+            </div>
+        </div>-->
+
+        <!--文章展示区域-->
+        <div class="ui basic segment">
+            <div class="ui items" id="show-article">
+
+            </div>
+        </div>
+
+        <!--分页区-->
+        <div class="ui bottom attached segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <a href="#" class="ui mini teal basic button">上一页</a>
+                </div>
+                <div class="right aligned column">
+                    <a href="#" class="ui mini teal basic button">下一页</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</html>
