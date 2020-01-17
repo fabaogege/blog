@@ -1,7 +1,9 @@
 package com.lzp.blog.dao;
 
 import com.lzp.blog.entity.Role;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface RoleMapper {
     int deleteByPrimaryKey(Integer id);
 

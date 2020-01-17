@@ -11,6 +11,14 @@ Cache-Control: no-cache
 {"id": 1}
 ### 文章操作接口测试开始
 
+### 获取所有文章
+GET {{baseURL}}/article/findArticleList
+Cache-Control: no-cache
+
+### 查询文章数量
+GET {{baseURL}}/article/countArticle
+Cache-Control: no-cache
+
 ### 获取指定id的文章
 GET {{baseURL}}/article/findArticle/1
 Cache-Control: no-cache
@@ -26,7 +34,7 @@ Cache-Control: no-cache
   "articleTitle": "测试标题"
 }
 ### 删除指定文章
-GET {{baseURL}}}/article/removeArticle/3
+GET {{baseURL}}/article/removeArticle/6
 Cache-Control: no-cache
 
 {"id":3}

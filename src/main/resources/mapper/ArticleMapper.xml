@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzp.blog.dao.ArticleMapper">
+  <resultMap id="BaseResultMap" type="com.lzp.blog.entity.Article">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="articleId" jdbcType="BIGINT" property="articleId" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="originalAuthor" jdbcType="VARCHAR" property="originalAuthor" />
+    <result column="articleTitle" jdbcType="VARCHAR" property="articleTitle" />
+    <result column="articleTags" jdbcType="VARCHAR" property="articleTags" />
+    <result column="articleType" jdbcType="VARCHAR" property="articleType" />
+    <result column="articleCategories" jdbcType="VARCHAR" property="articleCategories" />
+    <result column="publishDate" jdbcType="VARCHAR" property="publishDate" />
+    <result column="updateDate" jdbcType="VARCHAR" property="updateDate" />
+    <result column="articleUrl" jdbcType="VARCHAR" property="articleUrl" />
+    <result column="likes" jdbcType="INTEGER" property="likes" />
+    <result column="lastArticleId" jdbcType="BIGINT" property="lastArticleId" />
+    <result column="nextArticleId" jdbcType="BIGINT" property="nextArticleId" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.lzp.blog.entity.Article">
+    <result column="articleContent" jdbcType="LONGVARCHAR" property="articleContent" />
+    <result column="articleTabloid" jdbcType="LONGVARCHAR" property="articleTabloid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, articleId, author, originalAuthor, articleTitle, articleTags, articleType, articleCategories, 
+    publishDate, updateDate, articleUrl, likes, lastArticleId, nextArticleId
+  </sql>
+  <sql id="Blob_Column_List">
+    articleContent, articleTabloid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from blog_article
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="getAllArticle" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    ,
+    <include refid="Blob_Column_List" />
+    from blog_article
+  </select>
+  <select id="selectByArticleId" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>,<include refid="Blob_Column_List"></include>
+    from blog_article where articleId = #{id}
+  </select>
+  <select id="countArticle" resultType="Integer">
+    select count(*) from blog_article
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from blog_article
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByArticleId" parameterType="java.lang.Long">
+  delete from blog_article
+  where articleId = #{articleId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.lzp.blog.entity.Article">
+    insert into blog_article (id, articleId, author, 
+      originalAuthor, articleTitle, articleTags, 
+      articleType, articleCategories, publishDate, 
+      updateDate, articleUrl, likes, 
+      lastArticleId, nextArticleId, articleContent, 
+      articleTabloid)
+    values (#{id,jdbcType=INTEGER}, #{articleId,jdbcType=BIGINT}, #{author,jdbcType=VARCHAR}, 
+      #{originalAuthor,jdbcType=VARCHAR}, #{articleTitle,jdbcType=VARCHAR}, #{articleTags,jdbcType=VARCHAR}, 
+      #{articleType,jdbcType=VARCHAR}, #{articleCategories,jdbcType=VARCHAR}, #{publishDate,jdbcType=VARCHAR}, 
+      #{updateDate,jdbcType=VARCHAR}, #{articleUrl,jdbcType=VARCHAR}, #{likes,jdbcType=INTEGER}, 
+      #{lastArticleId,jdbcType=BIGINT}, #{nextArticleId,jdbcType=BIGINT}, #{articleContent,jdbcType=LONGVARCHAR}, 
+      #{articleTabloid,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lzp.blog.entity.Article">
+    insert into blog_article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="articleId != null">
+        articleId,
+      </if>
+      <if test="author != null">
+        author,
+      </if>
+      <if test="originalAuthor != null">
+        originalAuthor,
+      </if>
+      <if test="articleTitle != null">
+        articleTitle,
+      </if>
+      <if test="articleTags != null">
+        articleTags,
+      </if>
+      <if test="articleType != null">
+        articleType,
+      </if>
+      <if test="articleCategories != null">
+        articleCategories,
+      </if>
+      <if test="publishDate != null">
+        publishDate,
+      </if>
+      <if test="updateDate != null">
+        updateDate,
+      </if>
+      <if test="articleUrl != null">
+        articleUrl,
+      </if>
+      <if test="likes != null">
+        likes,
+      </if>
+      <if test="lastArticleId != null">
+        lastArticleId,
+      </if>
+      <if test="nextArticleId != null">
+        nextArticleId,
+      </if>
+      <if test="articleContent != null">
+        articleContent,
+      </if>
+      <if test="articleTabloid != null">
+        articleTabloid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
+      </if>
+      <if test="author != null">
+        #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="originalAuthor != null">
+        #{originalAuthor,jdbcType=VARCHAR},
+      </if>
+      <if test="articleTitle != null">
+        #{articleTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="articleTags != null">
+        #{articleTags,jdbcType=VARCHAR},
+      </if>
+      <if test="articleType != null">
+        #{articleType,jdbcType=VARCHAR},
+      </if>
+      <if test="articleCategories != null">
+        #{articleCategories,jdbcType=VARCHAR},
+      </if>
+      <if test="publishDate != null">
+        #{publishDate,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=VARCHAR},
+      </if>
+      <if test="articleUrl != null">
+        #{articleUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="likes != null">
+        #{likes,jdbcType=INTEGER},
+      </if>
+      <if test="lastArticleId != null">
+        #{lastArticleId,jdbcType=BIGINT},
+      </if>
+      <if test="nextArticleId != null">
+        #{nextArticleId,jdbcType=BIGINT},
+      </if>
+      <if test="articleContent != null">
+        #{articleContent,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="articleTabloid != null">
+        #{articleTabloid,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lzp.blog.entity.Article">
+    update blog_article
+    <set>
+      <if test="articleId != null">
+        articleId = #{articleId,jdbcType=BIGINT},
+      </if>
+      <if test="author != null">
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="originalAuthor != null">
+        originalAuthor = #{originalAuthor,jdbcType=VARCHAR},
+      </if>
+      <if test="articleTitle != null">
+        articleTitle = #{articleTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="articleTags != null">
+        articleTags = #{articleTags,jdbcType=VARCHAR},
+      </if>
+      <if test="articleType != null">
+        articleType = #{articleType,jdbcType=VARCHAR},
+      </if>
+      <if test="articleCategories != null">
+        articleCategories = #{articleCategories,jdbcType=VARCHAR},
+      </if>
+      <if test="publishDate != null">
+        publishDate = #{publishDate,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        updateDate = #{updateDate,jdbcType=VARCHAR},
+      </if>
+      <if test="articleUrl != null">
+        articleUrl = #{articleUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="likes != null">
+        likes = #{likes,jdbcType=INTEGER},
+      </if>
+      <if test="lastArticleId != null">
+        lastArticleId = #{lastArticleId,jdbcType=BIGINT},
+      </if>
+      <if test="nextArticleId != null">
+        nextArticleId = #{nextArticleId,jdbcType=BIGINT},
+      </if>
+      <if test="articleContent != null">
+        articleContent = #{articleContent,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="articleTabloid != null">
+        articleTabloid = #{articleTabloid,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.lzp.blog.entity.Article">
+    update blog_article
+    set articleId = #{articleId,jdbcType=BIGINT},
+      author = #{author,jdbcType=VARCHAR},
+      originalAuthor = #{originalAuthor,jdbcType=VARCHAR},
+      articleTitle = #{articleTitle,jdbcType=VARCHAR},
+      articleTags = #{articleTags,jdbcType=VARCHAR},
+      articleType = #{articleType,jdbcType=VARCHAR},
+      articleCategories = #{articleCategories,jdbcType=VARCHAR},
+      publishDate = #{publishDate,jdbcType=VARCHAR},
+      updateDate = #{updateDate,jdbcType=VARCHAR},
+      articleUrl = #{articleUrl,jdbcType=VARCHAR},
+      likes = #{likes,jdbcType=INTEGER},
+      lastArticleId = #{lastArticleId,jdbcType=BIGINT},
+      nextArticleId = #{nextArticleId,jdbcType=BIGINT},
+      articleContent = #{articleContent,jdbcType=LONGVARCHAR},
+      articleTabloid = #{articleTabloid,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lzp.blog.entity.Article">
+    update blog_article
+    set articleId = #{articleId,jdbcType=BIGINT},
+      author = #{author,jdbcType=VARCHAR},
+      originalAuthor = #{originalAuthor,jdbcType=VARCHAR},
+      articleTitle = #{articleTitle,jdbcType=VARCHAR},
+      articleTags = #{articleTags,jdbcType=VARCHAR},
+      articleType = #{articleType,jdbcType=VARCHAR},
+      articleCategories = #{articleCategories,jdbcType=VARCHAR},
+      publishDate = #{publishDate,jdbcType=VARCHAR},
+      updateDate = #{updateDate,jdbcType=VARCHAR},
+      articleUrl = #{articleUrl,jdbcType=VARCHAR},
+      likes = #{likes,jdbcType=INTEGER},
+      lastArticleId = #{lastArticleId,jdbcType=BIGINT},
+      nextArticleId = #{nextArticleId,jdbcType=BIGINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

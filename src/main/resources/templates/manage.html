@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>博客管理</title>
+
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/css/semantic/semantic.css}"/>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <!--富文本编辑器js-->
+    <script src="https://unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+
+</head>
+<body>
+<!--顶部导航栏区域-->
+<!--<div class="ui inverted segment menu m-padded-tb-mini m-shadow-small" >
+    &lt;!&ndash;<div class="ui container">&ndash;&gt;
+    <div class="ui secondary stackable menu container">
+        &lt;!&ndash;<h2 class="left ui item">发包锅锅</h2>&ndash;&gt;
+        &lt;!&ndash;<h2 class="ui teal header item">发包锅锅</h2>&ndash;&gt;
+        <h2 class="ui teal header item left">Blog</h2>
+        &lt;!&ndash;<a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>&ndash;&gt;
+    </div>
+    &lt;!&ndash;</div>&ndash;&gt;
+</div>-->
+
+<div class="ui grid">
+    <!--左侧边栏-->
+    <div class="four wide column">
+        <div class="ui vertical accordion  sidebar menu left overlay visible" id="toc" style="">
+            <div class="item">
+                <a class="ui logo icon image" href="/">
+                    <img src="/images/logo.png">
+                </a>
+                <h2><a href="/"><b>博客管理</b></a></h2>
+            </div>
+            <div class="item">
+                <div class=" title"><i class="dropdown icon"></i>
+                    <a class="header">文章管理</a>
+                </div>
+                <div class=" content">
+                    <a class="item ">我的博客</a>
+                    <a class="item">添加博客</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class=" title"><i class="dropdown icon"></i>
+                    <a class="header">分类管理</a>
+                </div>
+                <div class=" content">
+                    <a class="item ">当前分类</a>
+                    <a class="item">添加分类</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--右侧子页面-->
+    <div class="eight wide column">
+        <!--<div th:replace="edit :: edit" >-->
+        <div class="row">
+
+        </div>
+        <div class="row" style="margin-top: 100px">
+            <div th:replace="article/articleList :: articleList" >
+        </div>
+    </div>
+</div>
+
+<!--左侧导航栏-->
+<!--<div class="ui visible inverted left vertical sidebar menu">
+    <div class="item">
+        <a class="ui logo icon image" href="/">
+
+        </a>
+        <h2><a href="/">博客管理</a></h2>
+    </div>
+        <a class="item">Home </a>
+    <div class="ui dropdown item">
+        Dropdown
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div class="item">Action</div>
+            <div class="item">Another Action</div>
+            <div class="item">Something else here</div>
+            <div class="divider"></div>
+            <div class="item">Separated Link</div>
+            <div class="divider"></div>
+            <div class="item">One more separated link</div>
+        </div>
+    </div>
+        <a class="item">Browse </a>
+        <a class="item">Help </a>
+</div>-->
+</body>
+<!--<script type="text/javascript" th:src="@{/js/semantic/semantic.js}"></script>-->
+<script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--<script type="text/javascript" th:src="@{/js/manage.js}"></script>-->
+<script>
+    $(document)
+        .ready(function() {
+            $('.ui.accordion')
+                .accordion();
+            /*$('.ui.menu .ui.dropdown').dropdown({
+                on: 'hover'
+            });*/
+            /*$('.trigger.example .accordion')
+                .accordion({
+                    selector: {
+                        trigger: '.title .icon'
+                    }
+                });*/
+            $('.ui.accordion').accordion('refresh');
+        })
+    ;
+</script>
+<script type="text/javascript">
+    var E = window.wangEditor
+    var editor1 = new E('#div1', '#div2')  // 两个参数也可以传入 elem 对象，class 选择器
+    editor1.customConfig.uploadImgServer = '/upload'
+    editor1.create()
+</script>
+</html>

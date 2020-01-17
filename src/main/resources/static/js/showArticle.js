@@ -1,4 +1,5 @@
 console.log("进入showArticle.js")
+var articleId = '';//文章id
 //获取文章List
 $.ajax({
     type:'get',
@@ -38,10 +39,10 @@ function render_show_article(articleInfo) {
     for(i=0;i<articleInfo.length;i++){
         articleContent += '<div class="item" id='+articleInfo[i].articleId+'>'+
             '    <div class="image">' +
-            '      <img src="https://unsplash.it/800/450?image=1005">' +
+            '      <img src="../img/1005.jpg">' +
             '    </div>'+
                             '<div class="content">'+
-                '                       <a class="header">'+articleInfo[i].articleTitle+'</a>' +
+                '                       <a class="header" id ="article-header" onclick="toArticleDetail(this)">'+articleInfo[i].articleTitle+'</a>' +
                 '                    <div class="description"> <p>'+articleInfo[i].articleTabloid+'</p> </div>'+
             '                       <div class="extra">' +
 
@@ -58,43 +59,6 @@ function render_show_article(articleInfo) {
             '</div>'+
             '</div>';
     }
-    /*for(i=0;i<articleInfo.length;i++){
-        articleContent += '<div class="ui padded vertical segment m-padded-tb-large" id='+articleInfo[i].articleId+'>'+
-            '<div class="ui mobile reversed stackable grid">' +
-            '<!--左侧文章信息-->'+
-                '<div class="eleven wide column">' +
-                    '<h2 ><a href="#" class="black">'+articleInfo[i].articleTitle+'</a></h2>'+
-                '<p class = "m-text">'+articleInfo[i].articleTabloid+'</p>'+
-                '<div class="ui grid">\n' +
-            '                                    <div class="eleven wide column">\n' +
-            '                                        <div class="ui mini horizontal link list">\n' +
-            '                                            <div class="item">\n'+
-            '                                                <div "><a href="#" class="header">'+articleInfo[i].author+'</a></div>\n' +
-            '                                            </div>\n' +
-            '                                            <div class="item">\n' +
-            '                                                <i class="calendar icon"></i> '+articleInfo[i].updateDate+'\n' +
-            '                                            </div>\n' +
-                                                        /!*
-            '                                            <div class="item">\n' +
-            '                                                <i class="eye icon"></i> 2342\n' +
-            '                                            </div>\n' +
-                                                        *!/
-            '                                        </div>\n' +
-            '                                    </div>\n' +
-            '                                    <div class="right aligned five wide column">\n' +
-            '                                        <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin">阅读全文</a>\n' +
-            '                                    </div>\n' +
-            '                                </div>'+
-                '</div>'+
-            '<!--右侧图片-->'+
-            '<div class="five wide column">\n' +
-            '                                <a href="#" target="_blank">\n' +
-            '                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">\n' +
-            '                                </a>\n' +
-            '                            </div>'+
-                '</div>'+
-            '</div>';
-    }*/
     showArticle = articleContent+articleMessage;
     $("#show-article").html(showArticle); //通过div的id给div赋值！
 }
@@ -102,6 +66,16 @@ function render_count_article(articleLength) {
     console.log("进入render_count_article方法");
     var artclesCount =articleLength;
     $("#articleLength").html(artclesCount)
+}
+//跳转指定文章详情页面
+$('#article-header').click(function () {
+    console.log('这个div的id:'+$('.item').attr("id"));
+    /*articleId ='';*/
+    /*href="/blog/articleDetail"*/
+});
+function toArticleDetail(headerA) {
+    articleId = $(headerA).parent().parent().attr("id");
+    window.location.href = "/blog/articleDetail/"+articleId;
 }
 /*function render_show_article(articleInfo) {
     console.log("进入render_show_article方法");

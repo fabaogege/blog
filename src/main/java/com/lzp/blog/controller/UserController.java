@@ -33,7 +33,7 @@ public class UserController {
         return jsonResponse.Success(userService.getRolesOfUser(userId));
     }*/
     @PostMapping(value = "/getRolesOfUser")
-    @ApiOperation(value = "获取用户的角色",notes = "通过用户id来获取角色信息")
+    @ApiOperation(value = "获取用户的角色信息",notes = "通过用户id来获取角色信息")
     public JsonResponse getRolesOfUser(@RequestBody User user){
         System.out.println("传入的用户为:"+user.toString());
         return jsonResponse.Success(userService.getRolesOfUser(user.getId()));

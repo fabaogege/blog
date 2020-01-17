@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>我的博客</title>
+
+    <!-- Bootstrap -->
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/css/semantic/semantic.css}"/>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+</head>
+<body>
+    <!--内容区域-->
+    <div th:fragment="articleList">
+        <table class="ui celled table">
+            <thead>
+            <tr><th>Name</th>
+                <th>年龄</th>
+                <th>Job</th>
+            </tr></thead>
+            <tbody>
+            <tr>
+                <td data-label="Name">James</td>
+                <td data-label="Age">24</td>
+                <td data-label="Job">Engineer</td>
+            </tr>
+            <tr>
+                <td data-label="Name">吉尔</td>
+                <td data-label="Age">26</td>
+                <td data-label="Job">Engineer</td>
+            </tr>
+            <tr>
+                <td data-label="Name">Elyse</td>
+                <td data-label="Age">24</td>
+                <td data-label="Job">Designer</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<!--<script type="text/javascript" th:src="@{/js/semantic/semantic.js}"></script>-->
+<script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--<script type="text/javascript" th:src="@{/js/manage.js}"></script>-->
+
+</html>

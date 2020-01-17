@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>编辑</title>
+    <script src="https://unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+    <style type="text/css">
+        .toolbar {
+            border: 1px solid #ccc;
+        }
+        .text {
+            border: 1px solid #ccc;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div th:fragment="edit">
+    <div id="div1" class="toolbar attached segment">
+    </div>
+    <div style="padding: 5px 0; color: #ccc">中间隔离带</div>
+    <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+        <p>请输入内容</p>
+    </div>
+</div>
+<script type="text/javascript">
+    var E = window.wangEditor
+    var editor1 = new E('#div1', '#div2')  // 两个参数也可以传入 elem 对象，class 选择器
+    editor1.customConfig.uploadImgServer = '/upload'
+    editor1.create()
+</script>
+</body>
+</html>

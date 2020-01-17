@@ -1,7 +1,9 @@
 package com.lzp.blog.dao;
 
 import com.lzp.blog.entity.Permission;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface PermissionMapper {
     int deleteByPrimaryKey(Long id);
 

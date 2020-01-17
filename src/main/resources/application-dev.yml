@@ -1,2 +1,3 @@
 server:
   port: 8080
+  #设定静态文件路径包括js，css等(springboot默认的静态资源文件是在static目录下，也可以自定义添加路径)
