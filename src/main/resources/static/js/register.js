@@ -4,11 +4,15 @@ var user = {
     password:""
 }
 $('#register').click(function () {
-    //获取注册信息
-    user.username = $('#username').val();
-    user.password = $('#password').val();
-    //注册
-    register(user);
+    if($('#username').val().length>0 && $('#password').val().length>0) {
+        //获取注册信息
+        user.username = $('#username').val();
+        user.password = $('#password').val();
+        //注册
+        register(user);
+    }else{
+        alert("请输入用户名称或者密码");
+    }
 });
 function register(user) {
     $.ajax({
