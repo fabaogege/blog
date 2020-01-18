@@ -37,6 +37,7 @@ spring:
     prefix: classpath:/templates/  # 页面映射路径
     suffix: .html # 试图后的后缀
     mode: HTML5 # 模板模式
+  #分页插件
 
 mybatis:
   type-aliases-package: com.lzp.blog.dao #扫描mapper文件
@@ -47,5 +48,8 @@ logging:
   config: classpath:log4j2.xml #加载配置文件
   level:
     com.lzp.blog.dao: DEBUG #sql打印
-
-
+pagehelper:
+  helper-dialect: mysql
+  params: count = countsql
+  reasonable: false #当该参数设置为 true 时，pageNum<=0 时会查询第一页， pageNum>pages（超过总数时），会查询最后一页。默认false 时，直接根据参数进行查询。
+  support-methods-arguments: true

@@ -3,7 +3,6 @@ package com.lzp.blog.util;
 import com.lzp.blog.dao.PermissionMapper;
 import com.lzp.blog.dao.RoleMapper;
 import com.lzp.blog.dao.UserMapper;
-import com.lzp.blog.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.shiro.SecurityUtils;
@@ -18,8 +17,6 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import javax.swing.undo.CannotUndoException;
 
 /**
  * @description: 实现自定Realm类完成认证和授权功能
@@ -66,7 +63,8 @@ public class CustomRealm extends AuthorizingRealm {
         /*//获取用户输入的账号
         String password = String.valueOf(authenticationToken.getPrincipal());*/
         //从数据库获取对应用户名密码的用户
-        String password = userMapper.getPassoword(token.getUsername());
+        //String password = userMapper.getPassoword(token.getUsername());
+        String password = "";
         //通过username从数据库查询用户
         if (null == password){
             LOGGER.info("用户不存在");

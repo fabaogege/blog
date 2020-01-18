@@ -4,6 +4,7 @@ import com.lzp.blog.util.URLConstant;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.net.URL;
 
@@ -35,8 +36,20 @@ public class RedirectController {
     public String toEerticleEdit(){
         return URLConstant.TO_EDIT;
     }
+    //管理页面
     @RequestMapping(value = "/manage")
     public String toManage(){
         return URLConstant.TO_MANAGE;
     }
+    //登录页面
+    @RequestMapping(value = "/login")
+    public String toLogin(){
+        return URLConstant.TO_LOGIN;
+    }
+    //注册页面
+    @RequestMapping(value = "/register")
+    public String toRegister(){
+        return URLConstant.TO_REGISTER;
+    }
+
 }

@@ -34,6 +34,11 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
+    public List<Article> findArticleList(int pageNum, int pageSize) {
+        return articleMapper.getArticle( pageNum,pageSize);
+    }
+
+    @Override
     public Article findArticle(Long id) {
         return articleMapper.selectByArticleId(id);
     }

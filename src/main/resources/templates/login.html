@@ -18,123 +18,98 @@
         body > .grid {
             height: 100%;
         }
-        .image {
-            margin-top: -100px;
-        }
         .column {
             max-width: 450px;
         }
     </style>
-    <script>
-        $(document)
-            .ready(function() {
-                $('.ui.form')
-                    .form({
-                        fields: {
-                            email: {
-                                identifier  : 'email',
-                                rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please enter your e-mail'
-                                    },
-                                    {
-                                        type   : 'email',
-                                        prompt : 'Please enter a valid e-mail'
-                                    }
-                                ]
-                            },
-                            password: {
-                                identifier  : 'password',
-                                rules: [
-                                    {
-                                        type   : 'empty',
-                                        prompt : 'Please enter your password'
-                                    },
-                                    {
-                                        type   : 'length[6]',
-                                        prompt : 'Your password must be at least 6 characters'
-                                    }
-                                ]
-                            }
-                        }
-                    })
-                ;
-            })
-        ;
-    </script>
 </head>
 <body>
+<<div class=" ui basic segment" >
 <div class="ui  aligned center aligned grid" style="margin-top: 100px">
-    <div class="column">
+    <div class="row">
         <h2 class="ui teal image header">
             <div class="content">
                 登录
             </div>
         </h2>
-
-        <form class="ui large form">
-            <div class="ui stacked segment">
-                <div class="field">
-                    <div class="ui left icon input">
-                        <i class="user icon"></i>
-                        <input type="text" name="email" placeholder="用户名称">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui left icon input">
-                        <i class="lock icon"></i>
-                        <input type="password" name="password" placeholder="密码">
-                    </div>
-                </div>
-                <div class="ui fluid large teal submit button">登录</div>
-            </div>
-
-            <div class="ui error message"></div>
-
-        </form>
-
-        <div class="ui message">
-            没有账号? <a href="#">注册一下</a>
+    </div>
+    <div class="row" style="max-width: 450px">
+        <div class="ui top attached tabular menu">
+            <a class="item active" data-tab="passwordLogin">密码登录 </a>
+            <a class="item" data-tab="non-passwordLogin">免密码登录</a>
         </div>
+        <div class="ui bottom attached tab segment active" data-tab="passwordLogin">
+            <div class="column">
+
+                <div class="ui large form">
+
+                    <div class="ui stacked segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="email" placeholder="用户名称">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="密码">
+                            </div>
+                        </div>
+                        <div class="ui fluid large teal submit button">登录</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui  message">
+                没有账号? <a href="/blog/register">注册一下</a>
+            </div>
+            <div class="ui message">
+                社交账号登录 :<a href="#">微信</a>
+            </div>
+        </div>
+
+
+        <div class="ui bottom attached tab segment" data-tab="non-passwordLogin">
+            <div class="column">
+
+                <div class="ui large form">
+
+                    <div class="ui stacked segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="phone" placeholder="手机号码">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="text" name="verificationCode" placeholder="验证码">
+                                <a class="ui button">获取验证码 </a>
+                            </div>
+                        </div>
+                        <div class="ui fluid large teal submit button">登录</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui  message">
+                没有账号? <a href="/blog/register">注册一下</a>
+            </div>
+            <div class="ui message">
+                社交账号登录 :<a href="#">微信</a>
+            </div>
+        </div>
+
     </div>
 </div>
-<!--<div class="ui aligned center aligned grid">
-    <div class="column">
-        <h2 class="ui teal image header">
-            <div class="content">
-                登录
-            </div>
-        </h2>
-
-        <form class="ui large form">
-            <div class="ui stacked segment">
-                <div class="field">
-                    <div class="ui left icon input">
-                        <i class="user icon"></i>
-                        <input type="text" name="email" placeholder="手机号，邮箱，或者用户名称">
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui left icon input">
-                        <i class="lock icon"></i>
-                        <input type="password" name="password" placeholder="密码">
-                    </div>
-                </div>
-                <div class="ui fluid large teal submit button">登录</div>
-            </div>
-
-            <div class="ui error message"></div>
-
-        </form>
-
-        <div class="ui message">
-            没有账号? <a href="#">注册一下</a>
-        </div>
-    </div>
-</div>-->
+</div>
 
 </body>
 <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu .item')
+        .tab()
+    ;
+</script>
 </html>

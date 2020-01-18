@@ -34,7 +34,7 @@
         <javaClientGenerator targetPackage="com.lzp.blog.dao" targetProject="src/main/java" type="XMLMAPPER"></javaClientGenerator>
 
         <!-- table标签可以有多个，至少一个，tableName指定表名，可以使用_和%通配符 -->
-        <table tableName="blog_article"
+        <table tableName="blog_user"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
             <!-- 是否只生成POJO对象 -->

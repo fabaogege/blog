@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/test")
 public class TestController {
-    @Autowired
+    /*@Autowired
     UserService userService;
     @Autowired
     JsonResponse jsonResponse;
@@ -30,7 +30,7 @@ public class TestController {
     @ApiOperation(value = "获取用户量",notes = "直接获取用户数量")
     @GetMapping (value = "/getUser")
     public JsonResponse<Integer> getUser() {
-        /*return userService.getUser();*/
+        *//*return userService.getUser();*//*
         return jsonResponse.Success(userService.getUser());
     }
     //获取所有标签
@@ -38,5 +38,5 @@ public class TestController {
     @GetMapping(value = "/getTags")
     public JsonResponse getTags(){
         return jsonResponse.Success(tagService.getTags());
-    }
+    }*/
 }

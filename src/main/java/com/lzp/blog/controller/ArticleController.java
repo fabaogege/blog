@@ -1,6 +1,8 @@
 
 package com.lzp.blog.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.lzp.blog.entity.Article;
 import com.lzp.blog.service.ArticleService;
 import com.lzp.blog.util.JsonResponse;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -28,6 +31,18 @@ public class ArticleController {
     ArticleService articleService;
     @Autowired
     JsonResponse jsonResponse;
+    /**
+     * @Description : 分页查询页面
+     * @Param:
+     */
+    @GetMapping(value = "/findArticle")
+    public JsonResponse findArticle(@RequestParam(defaultValue = "1",value = "pageNum")int pageNum,
+                                    @RequestParam(defaultValue = "5",value = "pageSize") int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<Article> articles = articleService.findArticleList();
+        PageInfo<Article> pageInfo = new PageInfo<Article>(articles);
+        return jsonResponse.Success(pageInfo);
+    }
     /**
      * @Description : 查询文章列表
      * @Param:

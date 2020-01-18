@@ -4,8 +4,8 @@ import com.lzp.blog.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
-@Repository
 @Mapper
+@Repository
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -17,12 +17,6 @@ public interface UserMapper {
 
     int updateByPrimaryKeySelective(User record);
 
-    int updateByPrimaryKeyWithBLOBs(User record);
-
     int updateByPrimaryKey(User record);
-    User selectByUsername(String username);
 
-    String getPassoword(String username);
-
-    User selectRoleByUserId(int id);
 }

@@ -14,15 +14,8 @@
     <!--中间文章展示-->
 <div th:fragment="showArticle" class="eleven wide column">
         <!--文章区域顶部统计区-->
-        <div class="ui top segment">
-            <div class="ui middle aligned two column grid">
-                <div class="column">
-                    <h3 class="ui header">博客</h3>
-                </div>
-                <div class="right aligned column" id="count-article">
-                    共 <h2 class="ui orange header m-inline-block m-text-thin" id="articleLength" ></h2> 篇
-                </div>
-            </div>
+        <div class="ui basic segment" id="header-img">
+
         </div>
 
         <!--文章展示区域-->
@@ -30,10 +23,14 @@
             <div class="ui items" id="show-article">
 
             </div>
+            <!--加载更多-->
+            <div id="more-article">
+
+            </div>
         </div>
 
         <!--分页区-->
-        <div class="ui bottom attached segment">
+        <!--<div class="ui bottom attached segment">
             <div class="ui middle aligned two column grid">
                 <div class="column">
                     <a href="#" class="ui mini teal basic button">上一页</a>
@@ -42,7 +39,7 @@
                     <a href="#" class="ui mini teal basic button">下一页</a>
                 </div>
             </div>
-        </div>
+        </div>-->
 
     </div>
 </html>

@@ -16,4 +16,8 @@ public final class URLConstant {
     public static final String TO_EDIT = "edit";
     //跳转到博客管理页面
     public static final String TO_MANAGE = "manage";
+    //跳转到登录页面
+    public static final String TO_LOGIN = "login";
+    //跳转到注册页面
+    public static final String TO_REGISTER = "register";
 }

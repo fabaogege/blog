@@ -6,87 +6,26 @@
     <result column="phone" jdbcType="VARCHAR" property="phone" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="gender" jdbcType="CHAR" property="gender" />
-    <result column="trueName" jdbcType="VARCHAR" property="truename" />
-    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
     <result column="email" jdbcType="VARCHAR" property="email" />
-    <result column="personalBrief" jdbcType="VARCHAR" property="personalbrief" />
-    <result column="recentlyLanded" jdbcType="VARCHAR" property="recentlylanded" />
-    <!--映射 user_role-->
-    <collection property="roles" javaType="list" column="id" ofType="com.lzp.blog.entity.Role" select="selectRolesByUserId"/>
-  </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.lzp.blog.entity.User">
-    <result column="avatarImgUrl" jdbcType="LONGVARCHAR" property="avatarimgurl" />
-  </resultMap>
-  <!--用户与角色映射结果集-->
-  <resultMap id="UserWithRole" type="com.lzp.blog.entity.User">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="phone" jdbcType="VARCHAR" property="phone" />
-    <result column="username" jdbcType="VARCHAR" property="username" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
-    <result column="gender" jdbcType="CHAR" property="gender" />
-    <result column="trueName" jdbcType="VARCHAR" property="truename" />
-    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
-    <result column="email" jdbcType="VARCHAR" property="email" />
-    <result column="personalBrief" jdbcType="VARCHAR" property="personalbrief" />
-    <result column="recentlyLanded" jdbcType="VARCHAR" property="recentlylanded" />
-    <!-- 关联role表-->
-    <collection property="roles" ofType="com.lzp.blog.entity.Role">
-      <id column="id" jdbcType="INTEGER" property="id" />
-      <result column="name" jdbcType="VARCHAR" property="name" />
-    </collection>
   </resultMap>
   <sql id="Base_Column_List">
-    id, phone, username, password, gender, trueName, birthday, email, personalBrief, 
-    recentlyLanded
+    id, phone, username, password, email
   </sql>
-  <sql id="Blob_Column_List">
-    avatarImgUrl
-  </sql>
-  <!--通过用户id查询用户的权限-->
-  <select id="selectRoleByUserId" resultMap="UserWithRole" parameterType="java.lang.Integer">
-    SELECT bu.id,bu.username,br.`name`
-    FROM blog_user bu,blog_role br,blog_user_role_rel b
-    where bu.id = b.user_id
-    AND br.id = b.role_id
-    AND bu.id = #{id}
-
-  </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
     from blog_user
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <!--通过用户名称查询用户对象-->
-
-  <select id="selectByUsername" resultType="com.lzp.blog.entity.User">
-    select *
-    from blog_user as b
-    where b.username = #{username}
-  </select>
-  <!--通过用户名查询密码-->
-    <select id="getPassoword" resultType="java.lang.String">
-      select b.password
-      from blog_user as b
-      where b.username = #{username}
-
-    </select>
-    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from blog_user
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.lzp.blog.entity.User">
     insert into blog_user (id, phone, username, 
-      password, gender, trueName, 
-      birthday, email, personalBrief, 
-      recentlyLanded, avatarImgUrl)
+      password, email)
     values (#{id,jdbcType=INTEGER}, #{phone,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, 
-      #{password,jdbcType=VARCHAR}, #{gender,jdbcType=CHAR}, #{truename,jdbcType=VARCHAR}, 
-      #{birthday,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{personalbrief,jdbcType=VARCHAR}, 
-      #{recentlylanded,jdbcType=VARCHAR}, #{avatarimgurl,jdbcType=LONGVARCHAR})
+      #{password,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.lzp.blog.entity.User">
     insert into blog_user
@@ -103,26 +42,8 @@
       <if test="password != null">
         password,
       </if>
-      <if test="gender != null">
-        gender,
-      </if>
-      <if test="truename != null">
-        trueName,
-      </if>
-      <if test="birthday != null">
-        birthday,
-      </if>
       <if test="email != null">
         email,
-      </if>
-      <if test="personalbrief != null">
-        personalBrief,
-      </if>
-      <if test="recentlylanded != null">
-        recentlyLanded,
-      </if>
-      <if test="avatarimgurl != null">
-        avatarImgUrl,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -138,26 +59,8 @@
       <if test="password != null">
         #{password,jdbcType=VARCHAR},
       </if>
-      <if test="gender != null">
-        #{gender,jdbcType=CHAR},
-      </if>
-      <if test="truename != null">
-        #{truename,jdbcType=VARCHAR},
-      </if>
-      <if test="birthday != null">
-        #{birthday,jdbcType=VARCHAR},
-      </if>
       <if test="email != null">
         #{email,jdbcType=VARCHAR},
-      </if>
-      <if test="personalbrief != null">
-        #{personalbrief,jdbcType=VARCHAR},
-      </if>
-      <if test="recentlylanded != null">
-        #{recentlylanded,jdbcType=VARCHAR},
-      </if>
-      <if test="avatarimgurl != null">
-        #{avatarimgurl,jdbcType=LONGVARCHAR},
       </if>
     </trim>
   </insert>
@@ -173,42 +76,10 @@
       <if test="password != null">
         password = #{password,jdbcType=VARCHAR},
       </if>
-      <if test="gender != null">
-        gender = #{gender,jdbcType=CHAR},
-      </if>
-      <if test="truename != null">
-        trueName = #{truename,jdbcType=VARCHAR},
-      </if>
-      <if test="birthday != null">
-        birthday = #{birthday,jdbcType=VARCHAR},
-      </if>
       <if test="email != null">
         email = #{email,jdbcType=VARCHAR},
       </if>
-      <if test="personalbrief != null">
-        personalBrief = #{personalbrief,jdbcType=VARCHAR},
-      </if>
-      <if test="recentlylanded != null">
-        recentlyLanded = #{recentlylanded,jdbcType=VARCHAR},
-      </if>
-      <if test="avatarimgurl != null">
-        avatarImgUrl = #{avatarimgurl,jdbcType=LONGVARCHAR},
-      </if>
     </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.lzp.blog.entity.User">
-    update blog_user
-    set phone = #{phone,jdbcType=VARCHAR},
-      username = #{username,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR},
-      gender = #{gender,jdbcType=CHAR},
-      trueName = #{truename,jdbcType=VARCHAR},
-      birthday = #{birthday,jdbcType=VARCHAR},
-      email = #{email,jdbcType=VARCHAR},
-      personalBrief = #{personalbrief,jdbcType=VARCHAR},
-      recentlyLanded = #{recentlylanded,jdbcType=VARCHAR},
-      avatarImgUrl = #{avatarimgurl,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.lzp.blog.entity.User">
@@ -216,12 +87,7 @@
     set phone = #{phone,jdbcType=VARCHAR},
       username = #{username,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
-      gender = #{gender,jdbcType=CHAR},
-      trueName = #{truename,jdbcType=VARCHAR},
-      birthday = #{birthday,jdbcType=VARCHAR},
-      email = #{email,jdbcType=VARCHAR},
-      personalBrief = #{personalbrief,jdbcType=VARCHAR},
-      recentlyLanded = #{recentlylanded,jdbcType=VARCHAR}
+      email = #{email,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

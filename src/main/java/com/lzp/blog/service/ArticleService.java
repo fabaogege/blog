@@ -18,6 +18,7 @@ public interface ArticleService {
      * @Date: 2019/12/31 10:52
      */
     List<Article> findArticleList();
+    List<Article> findArticleList(int pageNum,int pageSize);
     //获取指定id的文章
     Article findArticle(Long id);
     //删除指定id

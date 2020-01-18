@@ -14,29 +14,46 @@
 </head>
 <body>
 <!--顶部导航栏区域-->
-<div class="ui fixed  segment  menu m-padded-tb-mini m-shadow-small" >
-    <!--<div class="ui container">-->
-        <div class="ui orange secondary stackable menu container">
-            <!--<h2 class="left ui item">发包锅锅</h2>-->
-            <!--<h2 class="ui teal header item">发包锅锅</h2>-->
+<!--<div class="ui fixed   segment  menu m-padded-tb-mini m-shadow-small" >
+    &lt;!&ndash;<div class="ui container">&ndash;&gt;
+    <div class="ui orange secondary stackable menu container">
+            &lt;!&ndash;<h2 class="left ui item">发包锅锅</h2>&ndash;&gt;
+            &lt;!&ndash;<h2 class="ui teal header item">发包锅锅</h2>&ndash;&gt;
             <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
-            <!--<a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>-->
-            <div class="right menu">
-                <div class="right m-item item m-mobile-hide">
-                    <div class="ui icon inverted transparent input">
-                        <input type="text" placeholder="Search....">
-                        <i class="search link icon"></i>
-                    </div>
+            &lt;!&ndash;<a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>&ndash;&gt;
+                <div class="ui icon  input">
+                    <input type="text" placeholder="Search....">
+                    <i class="search link icon"></i>
                 </div>
+            <div class="right item">
+                <a class="ui button">登录 </a>
+                <a class="ui  button">注册 </a>
+            </a>
+        </div>
+    &lt;!&ndash;</div>&ndash;&gt;
+</div>
+</div>-->
+<div class="ui  center aligned attached segment" >
+    <div class="ui container">
+        <div class="ui  secondary  stackable menu">
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="active teal item">首页</a>
+            <div class="ui icon input item">
+                <input type="text" placeholder="Search....">
+                <i class="search link icon"></i>
+            </div>
+            <div class="right item">
+                    <a  class="ui teal button" href = "login">登录 </a >
+                    <a  class="ui  teal button" href = "register">注册 </a >
             </div>
         </div>
-    <!--</div>-->
+    </div>
 </div>
 <!--缓冲区 后续会用来当成公告-->
-<div class="ui container" style="margin-top: 100px">
+<!--<div class="ui container" style="margin-top: 100px">
 
-</div>
+</div>-->
 <!-- 中间展示区域-->
 <div  class="m-container ">
     <div class="ui container">
@@ -50,18 +67,6 @@
 
     </div>
 </div>
-<!--<div class="ui item">
-    <div class="content eleven wide column">
-        <a class="header">标题</a>
-        <div class="description">
-
-        </div>
-        <div class="extra">Additional Details </div>
-    </div>
-    <div class="image five wide column">
-        <img src="https://unsplash.it/800/450?image=1005">
-    </div>
-</div>-->
 </body>
 <!--<script type="text/javascript" th:src="@{/js/semantic/semantic.js}"></script>-->
 <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>

@@ -6,6 +6,7 @@ import com.lzp.blog.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,20 +19,11 @@ public class UserServiceImpl implements UserService {
     private static final Logger LOGGER  = LogManager.getLogger(UserServiceImpl.class);
     @Autowired
     UserMapper userMapper;
+
     @Override
-    public User getUser() {
-        LOGGER.info("获取User开始");
-        String username = "张海洋";
-        return userMapper.selectByUsername(username);
+    public int addUser(User user) {
+        LOGGER.info("新增用户开始");
+        return userMapper.insert(user);
     }
 
-    /**
-     * @Description : 通过用户id获取用户角色
-     * @Return : com.lzp.blog.entity.User
-     */
-    @Override
-    public User getRolesOfUser(int userId) {
-        LOGGER.info("通过用户id获取用户角色开始");
-        return userMapper.selectRoleByUserId(userId);
-    }
 }
